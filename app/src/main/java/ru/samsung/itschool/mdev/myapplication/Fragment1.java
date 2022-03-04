@@ -29,5 +29,7 @@ public class Fragment1 extends Fragment {
         fragment1Binding = Fragment1Binding.inflate(inflater, container, false);
         fragment1Binding.textVIew1.setText(mParam1);
         return fragment1Binding.getRoot();
+        // Navigation!!!
+        
     }
 }

@@ -9,9 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import ru.samsung.itschool.mdev.myapplication.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Fragment2.OnFragment2DataListener{
 
     private ActivityMainBinding binding;
     public static final String KEY = "key";
@@ -51,5 +53,10 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
 
 
+    }
+
+    @Override
+    public void getData(String str) {
+        Snackbar.make(findViewById(R.id.mainRoot),str,Snackbar.LENGTH_LONG).show();
     }
 }
