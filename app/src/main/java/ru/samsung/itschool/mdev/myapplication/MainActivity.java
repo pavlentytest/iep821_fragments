@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity implements Fragment2.OnFragm
         ft.replace(R.id.body,fr);
         ft.addToBackStack(null);
         ft.commit();
-
-
     }
 
     @Override
